@@ -1,0 +1,33 @@
+# Allow search indexing, including Google Search and Google Scholar.
+User-agent: *
+Allow: /
+
+# Request that known AI data crawlers do not crawl this site.
+# These rules rely on crawler cooperation; they are not access controls.
+# AI search and user-requested retrieval remain allowed by default.
+
+User-agent: Amazonbot
+Disallow: /
+
+# Apple's training opt-out; ordinary Applebot search remains allowed.
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+# Google's Gemini usage opt-out; Googlebot search remains allowed.
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
